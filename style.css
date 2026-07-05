@@ -1,0 +1,37 @@
+:root {
+    --navy-dark: #1a2640;
+    --navy-light: #263a52;
+    --slate: #6b7a8f;
+    --slate-light: #e8ecf1;
+    --accent-teal: #0ea5a5;
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: 'Source Sans Pro', sans-serif; }
+
+header { background: var(--navy-dark); position: sticky; top: 0; z-index: 50; }
+.hero-overlay { background: linear-gradient(135deg, rgba(26, 38, 64, 0.92), rgba(38, 58, 82, 0.88)); }
+
+.nav-link { 
+    color: white; padding: 0.5rem 0; position: relative; transition: 0.3s;
+}
+.nav-link::after { 
+    content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px; 
+    background: var(--accent-teal); transition: width 0.3s; 
+}
+.nav-link:hover::after { width: 100%; }
+
+.card { background: white; border: 1px solid var(--slate-light); border-radius: 8px; overflow: hidden; }
+
+.card { 
+    background: white; 
+    border: 1px solid #e8ecf1; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}

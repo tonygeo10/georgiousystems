@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Georgiou Security Systems</title>
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="w-full min-h-screen">
+
+    <header class="w-full">
+        <div class="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
+            <h1 class="text-xl font-bold tracking-wide text-white">Georgiou Security Systems</h1>
+            <button type="button" class="nav-toggle flex items-center justify-center w-10 h-10 rounded-lg hover:bg-navy-light transition-colors" aria-label="Toggle navigation">
+                <i data-lucide="menu" class="w-6 h-6 text-white"></i>
+            </button>
+            <nav class="nav-menu hidden sm:flex gap-8">
+                <ul class="flex gap-8 text-sm font-medium">
+                    <li><a href="#home" class="nav-link">Αρχική</a></li>
+                    <li><a href="#about" class="nav-link">Σχετικά</a></li>
+                    <li><a href="#services" class="nav-link">Υπηρεσίες</a></li>
+                    <li><a href="#contact" class="nav-link">Επικοινωνία</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="relative w-full overflow-hidden">
+            <img class="absolute inset-0 w-full h-full object-cover" src="https://images.pexels.com/photos/37591147/pexels-photo-37591147.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Security cameras">
+            <div class="hero-overlay relative z-10 py-32 px-6 text-center text-white">
+                <h2 class="text-4xl sm:text-6xl font-bold max-w-4xl mx-auto leading-tight">Ολοκληρωμένη Ασφάλεια για το Σπίτι &amp; την Επιχείρηση</h2>
+                <p class="mt-6 text-lg sm:text-xl opacity-95 max-w-2xl mx-auto">Εξειδικευμένες λύσεις από επαγγελματίες με τεχνική κατάρτιση.</p>
+                <a href="#contact" class="inline-block mt-10 px-8 py-3 rounded-lg font-semibold bg-teal-500 hover:scale-105 transition-all">Ζητήστε Προσφορά</a>
+            </div>
+        </section>
+
+        <section id="about" class="w-full py-20 px-6 bg-white text-center">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl font-bold mb-8 text-navy-dark">Ποιοι Είμαστε</h2>
+                <p class="text-slate leading-relaxed">Είμαστε μια οικογενειακή επιχείρηση που συνδυάζει την πολυετή εμπειρία στις εγκαταστάσεις με την επίσημη τεχνική κατάρτιση στον τομέα των ηλεκτρονικών. Ο πατέρας, ως πτυχιούχος ηλεκτρονικός, εγγυάται την τεχνική αρτιότητα σε κάθε ρύθμιση και παραμετροποίηση συστημάτων.</p>
+            </div>
+        </section>
+
+      <section id="services" class="w-full py-20 px-6 bg-slate-light">
+    <div class="max-w-5xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-16 text-navy-dark">Οι Υπηρεσίες μας</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <div class="card">
+                <img src="https://images.pexels.com/photos/1990764/pexels-photo-1990764.jpeg" class="w-full h-56 object-cover" alt="Security keypad">
+                <div class="p-8">
+                    <h3 class="text-xl font-bold mb-3">Συναγερμοί</h3>
+                    <p class="text-slate">Εγκατάσταση και ρύθμιση συστημάτων συναγερμού για απόλυτη προστασία.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.pexels.com/photos/96612/pexels-photo-96612.jpeg" class="w-full h-56 object-cover" alt="Outdoor security cameras">
+                <div class="p-8">
+                    <h3 class="text-xl font-bold mb-3">Κάμερες (CCTV)</h3>
+                    <p class="text-slate">Συστήματα επιτήρησης με δυνατότητα απομακρυσμένης πρόσβασης από το κινητό.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.pexels.com/photos/16423104/pexels-photo-16423104.jpeg" class="w-full h-56 object-cover" alt="Smart home technology">
+                <div class="p-8">
+                    <h3 class="text-xl font-bold mb-3">Smart Home</h3>
+                    <p class="text-slate">Αυτοματισμοί και έξυπνες λύσεις για τον έλεγχο και τη διαχείριση του χώρου σας.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+    </main>
+    
+  <form action="https://formspree.io/f/xgojdzvj" method="POST" class="space-y-4 max-w-md mx-auto p-6 bg-white rounded-xl shadow-lg border border-gray-100">
+  
+  <!-- Email -->
+  <div>
+    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Επικοινωνίας</label>
+    <input type="email" name="email" id="email" required placeholder="Το email σας..." class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#0ea5a5] focus:border-[#0ea5a5] outline-none">
+  </div>
+
+  <!-- Τύπος Σπιτιού -->
+  <div>
+    <label for="property_type" class="block text-sm font-medium text-gray-700 mb-1">Τύπος Σπιτιού</label>
+    <select name="property_type" id="property_type" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#0ea5a5] focus:border-[#0ea5a5] outline-none">
+        <option value="Γκαρσονιέρα">Γκαρσονιέρα</option>
+        <option value="2αρι">2άρι</option>
+        <option value="3αρι">3άρι</option>
+        <option value="Μεζονέτα">Μεζονέτα</option>
+    </select>
+  </div>
+
+  <!-- Είδος Συναγερμού -->
+  <div>
+    <label for="security_type" class="block text-sm font-medium text-gray-700 mb-1">Είδος Υπηρεσίας</label>
+    <select name="security_type" id="security_type" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#0ea5a5] focus:border-[#0ea5a5] outline-none">
+        <option value="Απλός συναγερμός">Απλός συναγερμός</option>
+        <option value="Advanced συναγερμός με κάμερες">Advanced συναγερμός με κάμερες</option>
+        <option value="Μόνο κάμερες">Μόνο κάμερες</option>
+    </select>
+  </div>
+
+  <!-- Μήνυμα -->
+  <div>
+    <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Μήνυμα / Σχόλια</label>
+    <textarea name="message" id="message" rows="3" placeholder="Πείτε μας περισσότερα..." class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-[#0ea5a5] focus:border-[#0ea5a5] outline-none"></textarea>
+  </div>
+
+  <!-- Κουμπί Υποβολής -->
+  <button type="submit" class="w-full bg-[#0ea5a5] text-white font-bold py-3 px-4 rounded-lg hover:bg-[#0c8e8e] transition duration-300">
+    Ζήτα Προσφορά Τώρα
+  </button>
+</form>
+
+ <footer id="contact" class="w-full py-12 px-6 bg-[#1a2640] text-white">
+  <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 text-center md:text-left">
+    
+    <div>
+      <h3 class="text-lg font-bold mb-4 text-[#0ea5a5]">Επικοινωνία</h3>
+      <ul class="space-y-3 opacity-90">
+        <li class="flex items-center justify-center md:justify-start gap-3">
+          <i data-lucide="phone" class="w-4 h-4"></i>
+          <a href="tel:6948502037" class="hover:text-[#0ea5a5] transition-colors">6948 502 037</a>
+        </li>
+        <li class="flex items-center justify-center md:justify-start gap-3">
+          <i data-lucide="phone" class="w-4 h-4"></i>
+          <a href="tel:6946045439" class="hover:text-[#0ea5a5] transition-colors">6946 045 439</a>
+        </li>
+        <li class="flex items-center justify-center md:justify-start gap-3">
+          <i data-lucide="mail" class="w-4 h-4"></i>
+          <a href="mailto:georgiouantony81@gmail.com" class="hover:text-[#0ea5a5] transition-colors">georgiouantony81@gmail.com</a>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-bold mb-4 text-[#0ea5a5]">Τοποθεσία</h3>
+      <p class="opacity-90 flex items-start justify-center md:justify-start gap-3">
+        <i data-lucide="map-pin" class="w-4 h-4 mt-1"></i>
+        <a href="https://www.google.com/maps/search/?api=1&query=Ευαγγελιστρίας+41+Πειραιάς" target="_blank" class="hover:text-[#0ea5a5] transition-colors">
+          Ευαγγελιστρίας 41, Πειραιάς
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <div class="text-center mt-10 pt-8 border-t border-white/10 opacity-70 text-sm">
+    © 2026 Georgiou Security Systems
+  </div>
+  <div class="mt-6 w-full h-64 overflow-hidden rounded-lg shadow-md">
+</div>
+</div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
